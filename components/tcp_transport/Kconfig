@@ -1,0 +1,10 @@
+menu "TCP Transport"
+
+    config TCP_TRANSPORT_WEBSOCKET_USERAGENT
+        string "Specify User-Agent in HTTP Header"
+        default "ESP32 Websocket Client";
+        help
+            Specify the User-Agent HTTP Header during WebSocket handshaking
+
+
+endmenu

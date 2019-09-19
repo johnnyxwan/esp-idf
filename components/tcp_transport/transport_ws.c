@@ -104,7 +104,7 @@ static int ws_connect(esp_transport_handle_t t, const char *host, int port, int 
                          "Upgrade: websocket\r\n"
                          "Sec-WebSocket-Version: 13\r\n"
                          "Sec-WebSocket-Key: %s\r\n"
-                         "User-Agent: ESP32 Websocket Client\r\n",
+                         "User-Agent: " CONFIG_TCP_TRANSPORT_WEBSOCKET_USERAGENT "\r\n",
                          ws->path,
                          host, port,
                          client_key);
